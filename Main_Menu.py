@@ -1,10 +1,11 @@
-
 import Tkinter as Tk
-import Run_Length as RL
-import tkMessageBox
+
+from Runlength import Run_Length as RL
 
 
 def main_menu():
+    def exit():
+        Index.destroy()
     def go_to_problem_1():
         Index.destroy()
         RL.run_length_menu()
@@ -14,6 +15,9 @@ def main_menu():
 
     Prog1_button = Tk.Button(Index,text="Run length Coding",command=go_to_problem_1)
     Prog1_button.grid(row = 2 ,columnspan=3, padx=10,pady=10)
+
+    Exit_button = Tk.Button(Index,text="Exit",command=exit)
+    Exit_button.grid(row = 10 ,columnspan=3, padx=10,pady=10)
 
     Index.mainloop()
     Index.lift()

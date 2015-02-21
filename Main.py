@@ -1,5 +1,5 @@
 __author__ = 'vidit'
 
-import main
+import Main_Menu
 
-main.main_menu()
+Main_Menu.main_menu()

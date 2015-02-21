@@ -1,6 +1,7 @@
 import Tkinter as Tk
-import Run_length_compression_algorithm as RLA
-import Run_Length as RL
+
+from Runlength.Compression import Run_length_compression_algorithm as RLA
+from .. import Run_Length
 
 def run_length_compress():
     def print_content():
@@ -9,7 +10,7 @@ def run_length_compress():
 
     def Go_Back():
         compression_window.destroy()
-        RL.run_length_menu()
+        Run_Length.run_length_menu()
 
     compression_window = Tk.Tk()
     compression_window.wm_title("Compression : ")
@@ -20,7 +21,7 @@ def run_length_compress():
     rl_input.grid(row=1,column=0,padx=10)
     rl_input.insert("1.0","Enter text here")
 
-    input_button=Tk.Button(compression_window,text = "Click to decompress",command=print_content).grid(row=2)
+    input_button=Tk.Button(compression_window,text = "Click to Compress",command=print_content).grid(row=2)
 
     Tk.Label(compression_window,text="Compressed String is : ").grid( row = 4)
     rl_output=Tk.Text(compression_window,height=5,width=50)
@@ -31,5 +32,5 @@ def run_length_compress():
 
     compression_window.mainloop()
     compression_window.lift()
-#run_length_compress()
+
 

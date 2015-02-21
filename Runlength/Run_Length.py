@@ -1,7 +1,8 @@
-
 import Tkinter as Tk
-import Run_length_compression as RLC
-import main
+
+from Runlength.Compression import Run_length_compression as RLC
+import Main_Menu
+
 
 def run_length_menu():
     def go_to_compression():
@@ -11,7 +12,7 @@ def run_length_menu():
         Run_length_window.destroy()
     def Go_Home():
         Run_length_window.destroy()
-        main.main_menu()
+        Main_Menu.main_menu()
 
     Run_length_window = Tk.Tk()
     Run_length_window.wm_title("Run Length Menu")
