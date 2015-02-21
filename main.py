@@ -16,8 +16,7 @@ def main_menu():
     Prog1_button.grid(row = 2 ,columnspan=3, padx=10,pady=10)
 
     Index.mainloop()
-
-main_menu()
+    Index.lift()
 
 #Start_Screen=0
 
