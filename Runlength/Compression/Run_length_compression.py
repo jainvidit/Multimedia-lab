@@ -1,7 +1,7 @@
 import Tkinter as Tk
 
 from Runlength.Compression import Run_length_compression_algorithm as RLA
-from .. import Run_Length
+#from .. import Run_Length
 
 def run_length_compress():
     def print_content():
@@ -10,7 +10,7 @@ def run_length_compress():
 
     def Go_Back():
         compression_window.destroy()
-        Run_Length.run_length_menu()
+ #       Run_Length.run_length_menu()
 
     compression_window = Tk.Tk()
     compression_window.wm_title("Compression : ")
